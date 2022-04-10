@@ -1,0 +1,47 @@
+.player {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-control {
+  width: 50%;
+  display: flex;
+  input {
+    width: 100%;
+    padding: 10px 0px;
+    transition: all 450ms ease;
+  }
+  input:active {
+    transform: scale(1.03);
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 30%;
+  svg {
+    cursor: pointer;
+    transition: all 450ms ease;
+  }
+  svg:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 60%;
+  }
+}
